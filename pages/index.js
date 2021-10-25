@@ -1,5 +1,11 @@
-import { Flex } from "@chakra-ui/layout";
+import { Divider } from "@chakra-ui/layout";
+import Header from "../components/header/Header";
 
 export default function Home() {
-    return <Flex>hello</Flex>;
+    return (
+        <>
+            <Header />
+            <Divider />
+        </>
+    );
 }
