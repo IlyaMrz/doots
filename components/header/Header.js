@@ -5,6 +5,7 @@ import HeaderLink from "./HeaderLink";
 const Header = () => {
     return (
         <Flex
+            style={{ top: "0" }}
             direction="row"
             justifyContent="space-between"
             height="64px"

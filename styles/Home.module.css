@@ -1,0 +1,53 @@
+.hero2 {
+    color: "#212529";
+}
+
+.sml_column {
+    padding: 36px 0 8px 0;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.sml_column h1 {
+    font-family: Arial, "Open Sans", sans-serif;
+    font-weight: 600;
+}
+.sml_column p {
+    font-family: "Almarai", "Open Sans", sans-serif;
+    font-weight: 100;
+}
+
+.btn {
+    width: 189px;
+    height: 50px;
+    bottom: unset !important;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 17px;
+    padding: 15px;
+    padding-top: 11px;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    background-color: #5aa7ff;
+    border-radius: 4px;
+    border: none;
+    border-top-color: initial;
+    border-top-style: none;
+    border-top-width: initial;
+    border-right-color: initial;
+    border-right-style: none;
+    border-right-width: initial;
+    border-bottom-color: initial;
+    border-bottom-style: none;
+    border-bottom-width: initial;
+    border-left-color: initial;
+    border-left-style: none;
+    border-left-width: initial;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+}
