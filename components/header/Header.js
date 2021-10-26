@@ -9,7 +9,12 @@ const Header = () => {
             justifyContent="space-between"
             height="64px"
             alignItems="center"
-            borderBottom=""
+            overflow="hidden"
+            position="fixed"
+            width="100%"
+            boxShadow="0 0 1px 0 rgba(100,100,100,.25)"
+            zIndex="1000"
+            background="rgba(255, 255, 255, 1)"
         >
             <Flex px="25px" width="100%">
                 <Box>
