@@ -1,6 +1,6 @@
 import { Flex } from "@chakra-ui/layout";
 
-import Heropt1 from "./heropt1";
+import Heropt1 from "./Heropt1";
 
 function Hero() {
     return (
