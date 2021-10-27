@@ -42,6 +42,17 @@ function HeroBottomPart() {
             <Box marginTop="30px">
                 <SignUpButton />
             </Box>
+            <Box marginTop="3rem">
+                Interested to see your brand on thousands of live streaming channels?{" "}
+                <Box as="a" href="/">
+                    Learn more
+                </Box>
+                <Box marginTop="2rem">
+                    <Box as="a" href="/">
+                        Get in touch with our sales team.
+                    </Box>
+                </Box>
+            </Box>
             <Box marginTop="64px" />
         </Box>
     );
