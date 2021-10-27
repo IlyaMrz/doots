@@ -1,6 +1,7 @@
 import { Box, Flex } from "@chakra-ui/layout";
 import SignUpButton from "../signUpButton/SignUpButton";
 import styles from "../../styles/Home.module.css";
+import { Image } from "@chakra-ui/image";
 
 function HeroBottomPart() {
     return (
@@ -29,14 +30,35 @@ function HeroBottomPart() {
                 <Box>
                     <Box as="h1">Games</Box>
                     <Box as="p">We love games and our gaming industry partners love you.</Box>
+                    <Flex marginTop="25px">
+                        <Image width="100px" src="partners/2k.svg" alt="2k" />
+                        <Image width="200px" src="partners/act.svg" alt="act" />
+                    </Flex>
 
-                    <Box as="h1">Hardware</Box>
+                    <Box marginTop="25px" as="h1">
+                        Hardware
+                    </Box>
                     <Box as="p">Let the best hardware brands support your channel.</Box>
+                    <Flex marginTop="25px">
+                        <Image width="200px" src="partners/nvd.svg" alt="nvidia" />
+                        <Image width="200px" src="partners/asus.svg" alt="asus" />
+                    </Flex>
 
-                    <Box as="h1">Media {"&"} Entertainment</Box>
+                    <Box marginTop="25px" as="h1">
+                        Media {"&"} Entertainment
+                    </Box>
                     <Box as="p">
                         Enjoy the support of the largest entertainment brands out there.
                     </Box>
+                    <Flex marginTop="25px">
+                        <Image
+                            marginRight="10px"
+                            width="150px"
+                            src="partners/ntf.svg"
+                            alt="netflix"
+                        />
+                        <Image width="150px" src="partners/shw.svg" alt="shw" />
+                    </Flex>
                 </Box>
             </Flex>
             <Box marginTop="30px">
