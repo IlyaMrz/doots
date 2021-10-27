@@ -2,7 +2,7 @@ import { Box, Flex } from "@chakra-ui/layout";
 import SignUpButton from "../signUpButton/SignUpButton";
 import styles from "../../styles/Home.module.css";
 
-function Heropt1() {
+function HeroTopPart() {
     return (
         <Box>
             <Box
@@ -24,7 +24,7 @@ function Heropt1() {
             >
                 HOST SPONSORED MESSAGES ON YOUR CHANNEL
             </Box>
-            <Flex direction="row" style={{ width: "70%" }}>
+            <Flex direction="row" style={{ minWidth: "200px", maxWidth: "550px" }}>
                 <Box>
                     <Box className={styles.sml_column}>
                         <Box as="h1">Easy Setup</Box>
@@ -56,4 +56,4 @@ function Heropt1() {
     );
 }
 
-export default Heropt1;
+export default HeroTopPart;
