@@ -47,8 +47,3 @@ a:hover {
 ::before {
     box-sizing: border-box;
 }
-
-.btn div {
-    flex-grow: 0;
-    color: green, i !important;
-}

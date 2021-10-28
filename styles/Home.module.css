@@ -18,7 +18,7 @@
 }
 
 .btn {
-    min-width: 189px;
+    width: fit-content;
     height: 50px;
     bottom: unset !important;
     color: #fff;
