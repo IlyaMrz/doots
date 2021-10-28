@@ -1,5 +1,5 @@
 import { Image } from "@chakra-ui/image";
-import { Box, Flex } from "@chakra-ui/layout";
+import { Box, Flex, Link } from "@chakra-ui/layout";
 import HeaderLink from "./HeaderLink";
 
 const Header = () => {
@@ -18,10 +18,10 @@ const Header = () => {
             background="rgba(255, 255, 255, 1)"
         >
             <Flex px="25px" width="100%">
-                <Box>
+                <Link href="/">
                     <Image src="brand.svg" width="56px" height="auto" alt="logo" />
-                </Box>
-                <HeaderLink>
+                </Link>
+                <HeaderLink path="/sales">
                     <Box ml="25px">Sales</Box>
                 </HeaderLink>
             </Flex>

@@ -1,10 +1,10 @@
-import { Box } from "@chakra-ui/layout";
+import { Link } from "@chakra-ui/layout";
 
-function HeaderLink({ children }) {
+function HeaderLink({ children, path = "/" }) {
     return (
-        <Box as="a" href="/" px="8px" whiteSpace="nowrap">
+        <Link as="a" href={path} px="8px" whiteSpace="nowrap">
             {children}
-        </Box>
+        </Link>
     );
 }
 

@@ -62,7 +62,7 @@ function HeroBottomPart() {
                 </Box>
             </Flex>
             <Box marginTop="30px">
-                <SignUpButton />
+                <SignUpButton>Sign Up - 100% Free</SignUpButton>
             </Box>
             <Box marginTop="3rem">
                 Interested to see your brand on thousands of live streaming channels?{" "}

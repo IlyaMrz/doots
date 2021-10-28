@@ -9,7 +9,7 @@ function Hero() {
         <Flex zIndex="-1" marginTop="4rem">
             <Flex
                 flexDirection="column"
-                ml={{ base: "2rem", sm: "2rem", md: "7rem", lg: "8rem" }}
+                mx={{ base: "2rem", sm: "2rem", md: "7rem", lg: "8rem" }}
                 marginTop="30px"
                 color="#212529"
             >

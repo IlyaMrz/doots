@@ -42,7 +42,7 @@ function HeroMiddle() {
                 </Flex>
             </Flex>
             <Box marginTop="30px">
-                <SignUpButton />
+                <SignUpButton>Sign Up - 100% Free</SignUpButton>
             </Box>
             <Box marginTop="64px">{<hr />}</Box>
         </Box>
