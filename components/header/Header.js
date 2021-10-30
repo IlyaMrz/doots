@@ -28,7 +28,7 @@ const Header = () => {
             <Flex py="25px" pr="30px" width="100%" justifyContent="end">
                 <HeaderLink>Sign up</HeaderLink>
                 <HeaderLink>Log in</HeaderLink>
-                <HeaderLink>Buy campaign?</HeaderLink>
+                <HeaderLink path="/sales">Buy campaign?</HeaderLink>
             </Flex>
         </Flex>
     );
