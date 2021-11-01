@@ -1,31 +1,8 @@
 import React from "react";
-import { auth, provider } from "../firebase/clientApp";
-import { getAuth, signInWithPopup, GoogleAuthProvider, signOut } from "firebase/auth";
+import { useAuth } from "../context/user/auth";
 
 function SignInScreen() {
-    const [token, setToken] = React.useState("");
-    const [user, setUser] = React.useState(null);
-    const login = async () => {
-        await signInWithPopup(auth, provider)
-            .then((result) => {
-                const credential = GoogleAuthProvider.credentialFromResult(result);
-                const token = credential.accessToken;
-                setToken(token);
-                const user = result.user;
-                setUser(user);
-            })
-            .catch((error) => {
-                console.log(error);
-            });
-    };
-    const logout = async () => {
-        try {
-            await signOut(auth);
-            setUser(null);
-        } catch (error) {
-            console.error(error);
-        }
-    };
+    const { user, login, logout } = useAuth();
 
     return (
         <div
