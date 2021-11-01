@@ -14,9 +14,9 @@ function SignInScreen() {
                 justifyContent: "center",
             }}
         >
-            {user?.email ? (
+            {user?.displayName ? (
                 <>
-                    {user.email}
+                    {user.displayName}
                     <button onClick={() => logout()}>logout</button>
                 </>
             ) : (

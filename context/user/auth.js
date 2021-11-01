@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import { auth, provider } from "../../firebase/clientApp";
-import { signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged } from "firebase/auth";
+import { signInWithPopup, signOut, onAuthStateChanged } from "firebase/auth";
 
 const AuthContext = createContext({
     user: null,
@@ -25,9 +25,8 @@ const AuthProvider = ({ children }) => {
     const login = async () => {
         await signInWithPopup(auth, provider)
             .then((result) => {
-                const credential = GoogleAuthProvider.credentialFromResult(result);
-                const token = credential.accessToken;
-                setToken(token);
+                // const credential = GoogleAuthProvider.credentialFromResult(result);
+                // const token = credential.accessToken;
                 const user = result.user;
                 setUser(user);
             })
