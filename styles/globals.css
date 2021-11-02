@@ -27,7 +27,8 @@ body {
 
 a:active,
 a:link,
-a:visited {
+a:visited,
+.headerlink {
     font-weight: 400;
     color: #5aa7ff;
     text-decoration: none;
@@ -38,7 +39,8 @@ a:visited {
     box-shadow: none !important;
 }
 
-a:hover {
+a:hover,
+.headerlink {
     text-decoration: underline;
 }
 

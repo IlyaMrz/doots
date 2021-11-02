@@ -1,8 +1,10 @@
 import { Image } from "@chakra-ui/image";
 import { Box, Flex, Link } from "@chakra-ui/layout";
 import HeaderLink from "./HeaderLink";
+import { useAuth } from "../../context/user/auth";
 
 const Header = () => {
+    const { user, login, logout } = useAuth();
     return (
         <Flex
             style={{ top: "0" }}
@@ -26,8 +28,17 @@ const Header = () => {
                 </HeaderLink>
             </Flex>
             <Flex py="25px" pr="30px" width="100%" justifyContent="end">
-                <HeaderLink>Sign up</HeaderLink>
-                <HeaderLink>Log in</HeaderLink>
+                {user ? (
+                    <Flex>
+                        <HeaderLink>{user.displayName}</HeaderLink>
+                        <HeaderLink fn={logout}>LogOut</HeaderLink>
+                    </Flex>
+                ) : (
+                    <Flex>
+                        <HeaderLink fn={login}>Sign up</HeaderLink>
+                        <HeaderLink fn={login}>Log in</HeaderLink>
+                    </Flex>
+                )}
                 <HeaderLink path="/sales">Buy campaign?</HeaderLink>
             </Flex>
         </Flex>
