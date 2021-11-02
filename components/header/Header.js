@@ -30,7 +30,7 @@ const Header = () => {
             <Flex py="25px" pr="30px" width="100%" justifyContent="end">
                 {user ? (
                     <Flex>
-                        <HeaderLink>{user.displayName}</HeaderLink>
+                        <div className={"userheader"}>{user.displayName}</div>
                         <HeaderLink fn={logout}>LogOut</HeaderLink>
                     </Flex>
                 ) : (

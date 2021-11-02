@@ -27,8 +27,7 @@ body {
 
 a:active,
 a:link,
-a:visited,
-.headerlink {
+a:visited {
     font-weight: 400;
     color: #5aa7ff;
     text-decoration: none;
@@ -39,8 +38,7 @@ a:visited,
     box-shadow: none !important;
 }
 
-a:hover,
-.headerlink {
+a:hover {
     text-decoration: underline;
 }
 
@@ -48,4 +46,9 @@ a:hover,
 ::after,
 ::before {
     box-sizing: border-box;
+}
+
+.userheader {
+    color: #6d6d9c;
+    font-weight: 600;
 }
