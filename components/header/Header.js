@@ -31,6 +31,7 @@ const Header = () => {
                 {user ? (
                     <Flex>
                         <div className={"userheader"}>{user.displayName}</div>
+                        <HeaderLink path="/dashboard">Dashboard</HeaderLink>
                         <HeaderLink fn={logout}>LogOut</HeaderLink>
                     </Flex>
                 ) : (

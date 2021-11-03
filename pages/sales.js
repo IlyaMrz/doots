@@ -1,13 +1,11 @@
 import { Image } from "@chakra-ui/image";
 import { Box, Flex } from "@chakra-ui/layout";
-import Header from "../components/header/Header";
 import SignUpButton from "../components/signUpButton/SignUpButton";
 import styles from "../styles/Home.module.css";
 
 function sales() {
     return (
         <Box>
-            <Header />
             <Flex zIndex="-1" marginTop="2rem">
                 <Flex
                     flexDirection="column"

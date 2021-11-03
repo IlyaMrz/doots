@@ -1,15 +1,9 @@
 import { Box } from "@chakra-ui/layout";
-import Header from "../components/header/Header";
 import Hero from "../components/hero/Hero";
 
 export default function Home({ data }) {
     console.log("data index: ", data);
-    return (
-        <Box>
-            <Header />
-            <Hero />
-        </Box>
-    );
+    return <Hero />;
 }
 
 export const getServerSideProps = async () => {

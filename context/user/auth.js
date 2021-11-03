@@ -13,11 +13,7 @@ const AuthProvider = ({ children }) => {
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
-            if (user) {
-                setUser(user);
-            } else {
-                setUser(null);
-            }
+            setUser(user ?? null);
         });
         return unsubscribe;
     }, []);
@@ -41,18 +37,8 @@ const AuthProvider = ({ children }) => {
             console.error(error);
         }
     };
-
-    return (
-        <AuthContext.Provider
-            value={{
-                user,
-                login,
-                logout,
-            }}
-        >
-            {children}
-        </AuthContext.Provider>
-    );
+    const values = { user, login, logout };
+    return <AuthContext.Provider value={values}>{children}</AuthContext.Provider>;
 };
 
 const useAuth = () => useContext(AuthContext);
